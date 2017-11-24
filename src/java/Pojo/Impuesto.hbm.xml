@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/11/2017 11:12:29 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Pojo.Impuesto" table="Impuesto" catalog="VentasMazda" optimistic-lock="version">
+        <id name="idImpuesto" type="java.lang.Integer">
+            <column name="idImpuesto" />
+            <generator class="identity" />
+        </id>
+        <property name="paisIdPais" type="int">
+            <column name="Pais_idPais" not-null="true" />
+        </property>
+        <property name="nombre" type="string">
+            <column name="nombre" length="45" not-null="true" />
+        </property>
+        <property name="porcentaje" type="string">
+            <column name="porcentaje" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

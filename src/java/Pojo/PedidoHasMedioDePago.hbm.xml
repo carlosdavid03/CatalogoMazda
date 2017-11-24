@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/11/2017 11:12:29 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Pojo.PedidoHasMedioDePago" table="Pedido_has_MedioDePago" catalog="VentasMazda" optimistic-lock="version">
+        <composite-id name="id" class="Pojo.PedidoHasMedioDePagoId">
+            <key-property name="pedidoIdPedido" type="int">
+                <column name="Pedido_idPedido" />
+            </key-property>
+            <key-property name="medioDePagoIdMedioDePago" type="int">
+                <column name="MedioDePago_idMedioDePago" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

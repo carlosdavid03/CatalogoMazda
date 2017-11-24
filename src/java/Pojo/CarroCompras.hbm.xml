@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/11/2017 11:12:29 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Pojo.CarroCompras" table="CarroCompras" catalog="VentasMazda" optimistic-lock="version">
+        <id name="idCarroCompras" type="java.lang.Integer">
+            <column name="idCarroCompras" />
+            <generator class="identity" />
+        </id>
+        <property name="pedidoIdPedido" type="int">
+            <column name="Pedido_idPedido" not-null="true" />
+        </property>
+        <property name="usuarioIdUsuario" type="int">
+            <column name="Usuario_idUsuario" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/11/2017 11:12:29 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Pojo.CarroComprasHasProducto" table="CarroCompras_has_Producto" catalog="VentasMazda" optimistic-lock="version">
+        <composite-id name="id" class="Pojo.CarroComprasHasProductoId">
+            <key-property name="carroComprasIdCarroCompras" type="int">
+                <column name="CarroCompras_idCarroCompras" />
+            </key-property>
+            <key-property name="productoIdProducto" type="int">
+                <column name="Producto_idProducto" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>
